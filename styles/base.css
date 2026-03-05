@@ -15,13 +15,6 @@
     display: none;
 }
 
-header a:focus,
-header button:focus,
-.hamburger:focus {
-    outline: 2px solid var(--tertiary-color);
-    outline-offset: 2px;
-}
-
 /* Header */
 header {
     display: grid;
@@ -126,6 +119,7 @@ h2 {
 
 .about-me-box p {
     padding: 0.5rem 1rem;
+    color: var(--secondary-color)
 }
 
 /** Picture **/
@@ -185,6 +179,10 @@ h2 {
 .courses-box .completed {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
+}
+
+.courses-box #credit-count {
+    color: var(--secondary-color)
 }
 
 /* Footer */
