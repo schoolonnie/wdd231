@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" href="styles/normalize.css">
@@ -36,7 +36,7 @@
             </ul>
         </nav>
         <main>
-            <div class="about-me-box">
+            <section class="about-me-box">
                 <h2>About Me</h2>
                 <p>Hello, my name is Lonnie Smith. I'm from the United States and I enjoy
                 programming and web development. I'm learning to be a software developer
@@ -44,19 +44,19 @@
                 play is Minecraft. I'm learning Korean for fun and to challenge myself
                 to keep learning.<br>
                 제 웹사이트를 즐겨보세요!</p>
-            </div>
-            <div class="picture-box">
+            </section>
+            <section class="picture-box">
                 <h2>"Picture of Me"</h2>
                 <img src="images/profile.jpg" alt="Profile Picture of Lonnie Smith" width="400" height="400">
-            </div>
-            <div class="courses-box">
+            </section>
+            <section class="courses-box">
                 <h2>Certificate Courses</h2>
                 <button id="course-all-btn" aria-label="list all courses">All Courses</button>
                 <button id="course-wdd-btn" aria-label="list WDD courses">WDD Courses</button>
                 <button id="course-cse-btn" aria-label="list CSE courses">CSE Courses</button>
                 <p id="credit-count"></p>
                 <div id="courses-list"></div>
-            </div>
+            </section>
         </main>
         <footer>
             <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
