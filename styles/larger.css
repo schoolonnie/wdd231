@@ -1,0 +1,49 @@
+@media only screen and (min-width: 38rem) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "a a b"
+                             "c c c";
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .navigation li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-box {
+        grid-area: a;
+        height: 300px;
+    }
+
+    .picture-box {
+        grid-area: b;
+        height: 300px;
+        margin: 2rem;
+    }
+
+    .picture-box img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .courses-box {
+        grid-area: c;
+        height: 550px;
+    }
+}
