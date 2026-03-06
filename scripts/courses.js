@@ -84,11 +84,8 @@ const wddbutton = document.querySelector('#course-wdd-btn');
 const csebutton = document.querySelector('#course-cse-btn');
 const creditCount = document.querySelector('#credit-count');
 
-let credits = 0;
-
 function displayCourses(filter) {
     courseslist.innerHTML = '';
-    credits = 0;
 
     const filtered = courses.filter(course => {
         if (filter === 'all') {
@@ -113,9 +110,9 @@ function displayCourses(filter) {
 
         courseDiv.appendChild(name);
         courseslist.appendChild(courseDiv);
-
-        credits += course.credits;
     })
+
+    const credits = filtered.reduce((total, course) => total + course.credits, 0);
 
     creditCount.textContent = `Total Credits: ${credits}`;
 }

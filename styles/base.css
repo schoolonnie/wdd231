@@ -127,6 +127,8 @@ h2 {
 .picture-box img {
     border: solid 1px var(--secondary-color);
     border-radius: 0 0 10px 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 /** Courses **/
