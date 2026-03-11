@@ -110,12 +110,6 @@ h2 {
     background-color: var(--secondary-background-color);
 }
 
-.card-img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
 #list-toggle::after {
     content: "⊞";
 }
