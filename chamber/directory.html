@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lonnie Smith">
+        <meta name="description" content="Jamestown Chamber of Commerce - Directory - List of all members in the commerce">
+        <title>Directory - JamestownCC</title>
+        <link rel="icon" href="favicon.ico">
+
+        <!-- Meta Tags -->
+        <meta property="og:title" content="Directory - JamestownCC">
+        <meta property="og:description" content="Jamestown Chamber of Commerce - Directory - List of all members in the commerce">
+        <meta property="og:url" content="https://schoolonnie.github.io/wdd231/chamber/directory.html">
+        <meta property="og:image" content="images/home.svg">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link defer href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link defer rel="stylesheet" href="../styles/normalize.css">
+        <link defer rel="stylesheet" href="styles/directory.css">
+        <link defer rel="stylesheet" href="styles/directory-large.css">
+
+        <!-- Scripts -->
+        <script defer src="../scripts/navigation.js"></script>
+        <script defer src="../scripts/getdates.js"></script>
+        <script defer src="scripts/directory.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.webp" alt="Home Icon" width="40" height="40">
+            <h1>Jamestown Chamber of Commerce - Directory</h1>
+            <button aria-label="menu toggle button" id="ham-btn" class="hamburger"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a class="current" href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" >Discover</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="title-section">
+                <h2>Directory</h2>
+                <button aria-label="grid or list view toggle" id="list-toggle"></button>
+            </section>
+            <section id="member-cards"></section>
+            <section id="members-list"></section>
+        </main>
+        <footer>
+            <h3>Jamestown Chamber of Commerce</h3>
+            <p>123 Jamesway Road</p>
+            <p>Jamestown, Jamestate</p>
+            <p>info@jamestowncc.net</p>
+            <p>(123)-456-7890</p>
+            <ul>
+                <li><a href="linkedin.com"><img src="images/linkedin.svg" alt="linkedin logo" width="50" height="50"></a></li>
+                <li><a href="facebook.com"><img src="images/facebook.svg" alt="facebook logo" width="50" height="50"></a></li>
+                <li><a href="youtube.com"><img src="images/youtube.svg" alt="youtube logo" width="50" height="50"></a></li>
+            </ul>
+            <p>WDD231 Class Project</p>
+            <p>Lonnie Smith</p>
+            <p>&copy; <span id="currentyear">2026</span> &star; Jamestown Chamber of Commerce</p>
+            <p id="lastModified">Last Modified: 00/00/0000</p>
+        </footer>
+        
+    </body>
+</html>

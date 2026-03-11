@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Nexus Global Solutions",
+      "address": "123 Innovation Way, San Francisco, CA 94105",
+      "phone": "(415) 555-0101",
+      "website": "https://www.nexusglobal.example",
+      "image": "nexus.svg",
+      "membership_level": 3
+    },
+    {
+      "name": "Blue Ridge Logistics",
+      "address": "450 Industrial Parkway, Asheville, NC 28801",
+      "phone": "(828) 555-0222",
+      "website": "https://www.blueridgelogistics.example",
+      "image": "brl.svg",
+      "membership_level": 2
+    },
+    {
+      "name": "Summit Creative Agency",
+      "address": "88 Peak Boulevard, Denver, CO 80202",
+      "phone": "(303) 555-0345",
+      "website": "https://www.summitcreate.example",
+      "image": "summit.svg",
+      "membership_level": 1
+    },
+    {
+      "name": "Green Leaf Organics",
+      "address": "15 Garden Lane, Portland, OR 97201",
+      "phone": "(503) 555-0498",
+      "website": "https://www.greenleaforganics.example",
+      "image": "organic.svg",
+      "membership_level": 2
+    },
+    {
+      "name": "Velocity Tech Partners",
+      "address": "900 Tech Plaza, Austin, TX 78701",
+      "phone": "(512) 555-0567",
+      "website": "https://www.velocitytp.example",
+      "image": "vtp.svg",
+      "membership_level": 3
+    },
+    {
+      "name": "Starlight Hospitality Group",
+      "address": "777 Neon Drive, Las Vegas, NV 89109",
+      "phone": "(702) 555-0612",
+      "website": "https://www.starlightgroup.example",
+      "image": "hospitality.svg",
+      "membership_level": 1
+    },
+    {
+      "name": "Iron Bridge Manufacturing",
+      "address": "2100 River Road, Pittsburgh, PA 15201",
+      "phone": "(412) 555-0789",
+      "website": "https://www.ironbridgemfg.example",
+      "image": "bridge.svg",
+      "membership_level": 2
+    }
+  ]
+}
