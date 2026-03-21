@@ -1,0 +1,175 @@
+@media only screen and (min-width: 38rem) {
+    #grid-section {
+        display: grid;
+        grid-template-columns: minmax(420px, 2.2fr) minmax(330px, 1fr);
+        grid-template-areas: 
+            "events weather"
+            "events weather"
+            "members weather";
+        gap: 1rem;
+        margin: 1rem auto;
+        max-width: 1400px;
+        width: min(100%, 98vw);
+        padding: 0 0.5rem;
+    }
+
+    #events-section {        
+        grid-area: events;
+        background-color: var(--background-color);
+        border: 1px solid var(--secondary-background-color);
+        border-radius: 10px;
+        padding: 0;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #events-section h2 {
+        margin: 0;
+        padding: 0.75rem 1rem;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 10px 10px 0 0;
+    }
+
+    #events-section img {
+        width: 100%;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 0 0 10px 10px;
+        display: block;
+    }
+
+    #events-section p {
+        margin: 0;
+        padding: 1rem;
+        background: rgba(0,0,0,0.4);
+        color: #ffe600;
+        position: relative;
+        z-index: 2;
+    }
+
+    #events-section figure,
+    #events-section .event-content {
+        width: 100%;
+    }
+
+    #weather-section {
+        grid-area: weather;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-content: start;
+        width: 100%;
+    }
+
+    #current-weather-card,
+    #forecast-weather-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-height: 22vh;
+        padding: 0.8rem;
+    }
+
+    #current-weather-card {
+        transition: min-height 0.3s ease, width 0.3s ease;
+        min-height: 20vh;
+    }
+
+    #forecast-weather-card {
+        transition: min-height 0.3s ease, width 0.3s ease;
+        min-height: 10vh;
+        max-height: none;
+        overflow: visible;
+    }
+
+    #weather-section {
+        align-items: start;
+        justify-items: stretch;
+        overflow: visible;
+        height: auto;
+        grid-auto-rows: minmax(auto, max-content);
+    }
+
+    #forecast-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #forecast-container .forecast-day {
+        min-width: 120px;
+    }
+
+    #members-section {
+        grid-area: members;
+        margin: 0;
+        padding: 1rem;
+        border: 1px solid var(--secondary-background-color);
+        border-radius: 10px;
+        background-color: var(--background-color);
+        min-height: 260px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        align-items: start;
+    }
+
+    #members-section h2 {
+        grid-column: 1 / -1;
+        margin: 0 0 1rem;
+    }
+
+    #top-member-cards {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 70rem) {
+    #grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "events weather"
+            "members weather";
+    }
+
+    #weather-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    #members-section {
+        grid-area: members;
+        grid-column: 1 / -1;
+        padding: 1.25rem;
+    }
+
+    #events-section {
+        min-height: 50vh;
+    }
+
+    #current-weather-card,
+    #forecast-weather-card {
+        min-height: 40vh;
+        max-height: none;
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #current-weather-card,
+    #forecast-weather-card {
+        align-self: stretch;
+    }
+
+    #forecast-weather-card {
+        min-height: 40vh;
+    }
+}

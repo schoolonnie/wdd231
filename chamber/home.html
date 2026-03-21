@@ -29,7 +29,7 @@
         <!-- Scripts -->
         <script defer src="../scripts/navigation.js"></script>
         <script defer src="../scripts/getdates.js"></script>
-        <script defer src="scripts/home.js"></script>
+        <script type="module" src="scripts/home.js"></script>
     </head>
     <body>
         <header>
@@ -48,6 +48,36 @@
         <main>
             <section id="title-section">
                 <h2>Home</h2>
+            </section>
+            <section id="hero-section">
+                <img src="images/hero.webp" alt="Downtown" width="1280" height="720">
+                <a href="join.html" id="hero-btn">Join Now!</a>
+            </section>
+            <section id="grid-section">
+                <section id="events-section">
+                    <h2>Events</h2>
+                    <img src="images/event.webp" alt="Image of people gathering" width="600" height="400">
+                    <p>Join us for our monthly James-network event! Bring someone named James to get in! Meet other James enthusiasts! Every 13th of the month, downtown Jamestown!</p>
+                </section>
+                <section id="weather-section">
+                    <section id="current-weather-card">
+                        <h2>Current Weather</h2>
+                        <div id="current-weather">
+                            <figure>
+                                <img id="weather-icon" src="" alt="">
+                                <figcaption id="weather-caption"></figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <section id="forecast-weather-card">
+                        <h2>3-Day Forecast</h2>
+                        <div id="forecast-container"></div>
+                    </section>
+                </section>
+                <section id="members-section">
+                    <h2>Our Top (GOLD) Members</h2>
+                    <section id="top-member-cards"></section>
+                </section>
             </section>
         </main>
         <footer>
