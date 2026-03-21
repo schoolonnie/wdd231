@@ -38,11 +38,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 0 0 10px 10px;
-}
-
-#events-section {
-    overflow: hidden;
-    max-width: 580px;
+    width: 100%;
 }
 
 #events-section h2 {
@@ -50,7 +46,7 @@
     background-color: var(--primary-color);
     margin: 0;
     padding: 10px;
-    max-width: 580px;
+    max-width: 100%;
 }
 
 #events-section p {
@@ -58,7 +54,6 @@
     background-color: var(--tertiary-color);
     color: var(--secondary-background-color);
     font-family: "Ubuntu", sans-serif;
-    max-width: 580px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -102,8 +97,8 @@
 }
 
 #forecast-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 

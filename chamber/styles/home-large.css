@@ -1,16 +1,17 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40rem) {
     #grid-section {
         display: grid;
-        grid-template-columns: minmax(420px, 2.2fr) minmax(330px, 1fr);
+        grid-template-columns: minmax(320px, 2.2fr) minmax(280px, 1fr);
         grid-template-areas: 
             "events weather"
             "events weather"
-            "members weather";
+            "members members";
         gap: 1rem;
         margin: 1rem auto;
-        max-width: 1400px;
-        width: min(100%, 98vw);
+        max-width: 1200px;
+        width: min(100%, 1200px);
         padding: 0 0.5rem;
+        box-sizing: border-box;
     }
 
     #events-section {        
@@ -45,8 +46,8 @@
         padding: 1rem;
         background: rgba(0,0,0,0.4);
         color: #ffe600;
-        position: relative;
-        z-index: 2;
+        position: static;
+        border-radius: 10px;
     }
 
     #events-section figure,
@@ -60,12 +61,15 @@
         grid-template-columns: 1fr;
         gap: 1rem;
         align-content: start;
-        width: 100%;
+        max-width: 100%;
+        align-items: start;
+        justify-items: start;
+        height: auto;
+        grid-auto-rows: minmax(auto, max-content);
     }
 
     #current-weather-card,
     #forecast-weather-card {
-        width: 100%;
         max-width: 100%;
         box-sizing: border-box;
         min-height: 22vh;
@@ -73,33 +77,18 @@
     }
 
     #current-weather-card {
-        transition: min-height 0.3s ease, width 0.3s ease;
         min-height: 20vh;
     }
 
     #forecast-weather-card {
-        transition: min-height 0.3s ease, width 0.3s ease;
         min-height: 10vh;
         max-height: none;
-        overflow: visible;
-    }
-
-    #weather-section {
-        align-items: start;
-        justify-items: stretch;
-        overflow: visible;
-        height: auto;
-        grid-auto-rows: minmax(auto, max-content);
     }
 
     #forecast-container {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-
-    #forecast-container .forecast-day {
-        min-width: 120px;
     }
 
     #members-section {
@@ -134,13 +123,14 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "events weather"
-            "members weather";
+            "members members";
     }
 
     #weather-section {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.8rem;
-        width: 100%;
+        gap: 0.5rem;
+        max-width: 100%;
+        margin: 1rem;
     }
 
     #members-section {
@@ -157,15 +147,11 @@
     #forecast-weather-card {
         min-height: 40vh;
         max-height: none;
-        width: 100%;
+        max-width: 100%;
         padding: 0.7rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    #current-weather-card,
-    #forecast-weather-card {
         align-self: stretch;
     }
 
