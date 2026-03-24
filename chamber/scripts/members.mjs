@@ -12,12 +12,12 @@ export async function loadMembers() {
 
 export function createMemberCard(company, includeLevel = false) {
     const card = document.createElement('section');
-    card.className = 'member-card';
+    card.classList.add('member-card', `level-${company.membership_level}`);
 
     const levelInfo = includeLevel ? `<p><strong>Member Level:</strong> ${company.membership_level}</p>` : '';
 
     card.innerHTML = `
-        <img loading="lazy" src="images/${company.image}" alt="${company.name} logo" width="50" height="50">
+        <img loading="lazy" class="card-img" src="images/${company.image}" alt="${company.name} logo" width="50" height="50">
         <h3>${company.name}</h3>
         <p><strong>Address:</strong> ${company.address}</p>
         <p><strong>Phone:</strong> ${company.phone}</p>

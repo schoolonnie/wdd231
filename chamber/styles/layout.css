@@ -18,6 +18,7 @@ header {
     border-bottom: solid 1px var(--secondary-background-color);
     column-gap: 5px;
     background-color: var(--primary-color);
+    grid-template-rows: auto auto;
 }
 
 header img {
@@ -53,6 +54,7 @@ h1 {
 /* Navigation */
 .navigation {
     display: none;
+    grid-column: 1 / -1;
 }
 
 .navigation.open {
@@ -72,6 +74,7 @@ h1 {
     background-color: var(--secondary-color);
     border-bottom: solid 1px var(--primary-color);
     font-family: "Ubuntu", sans-serif;
+    border-radius: 10px;
 }
 
 .navigation a.current {
@@ -81,9 +84,15 @@ h1 {
 
 .navigation a:hover {
     background-color: var(--tertiary-color);
+    color: var(--secondary-background-color);
+    border: 1px solid var(--secondary-background-color);
+    border-radius: 10px;
 }
 
 /* Main */
+main {
+    background-color: var(--tertiary-background-color);
+}
 #title-section {
     background-color: var(--background-color);
     padding: 1rem;
@@ -123,4 +132,30 @@ footer ul {
 
 footer li {
     padding-right: 30px;
+}
+
+@media only screen and (min-width: 40rem) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        padding: 0.5rem 3rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 70rem) {
+    .navigation a {
+        padding: 0.5rem 6rem;
+    }
 }
