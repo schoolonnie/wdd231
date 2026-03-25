@@ -83,8 +83,10 @@ const allbutton = document.querySelector('#course-all-btn');
 const wddbutton = document.querySelector('#course-wdd-btn');
 const csebutton = document.querySelector('#course-cse-btn');
 const creditCount = document.querySelector('#credit-count');
+const courseDetails = document.querySelector('#course-details');
 
 function displayCourses(filter) {
+    console.log('displayCourses called with filter:', filter);
     courseslist.innerHTML = '';
 
     const filtered = courses.filter(course => {
@@ -95,6 +97,7 @@ function displayCourses(filter) {
             return course.subject === filter;
         }
     });
+    console.log('filtered courses:', filtered.length);
 
     filtered.forEach(course => {
         const courseDiv = document.createElement('div');
@@ -110,6 +113,10 @@ function displayCourses(filter) {
 
         courseDiv.appendChild(name);
         courseslist.appendChild(courseDiv);
+
+        courseDiv.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     })
 
     const credits = filtered.reduce((total, course) => total + course.credits, 0);
@@ -123,18 +130,50 @@ function setActiveButton(filter) {
     csebutton.classList.toggle('active', filter === 'CSE');    
 }
 
-allbutton.addEventListener('click', () => {
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+  
+    const closeModal = courseDetails.querySelector('#closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing courses');
+    const courseslist = document.querySelector('#courses-list');
+    const allbutton = document.querySelector('#course-all-btn');
+    const wddbutton = document.querySelector('#course-wdd-btn');
+    const csebutton = document.querySelector('#course-cse-btn');
+    const creditCount = document.querySelector('#credit-count');
+    const courseDetails = document.querySelector('#course-details');
+
+    console.log('courseslist:', courseslist);
+    console.log('allbutton:', allbutton);
+
+    allbutton.addEventListener('click', () => {
+        displayCourses('all');
+        setActiveButton('all');
+    });
+    wddbutton.addEventListener('click', () => {
+        displayCourses('WDD');
+        setActiveButton('WDD');
+    });
+    csebutton.addEventListener('click', () => {
+        displayCourses('CSE');
+        setActiveButton('CSE');
+    });
+
     displayCourses('all');
     setActiveButton('all');
 });
-wddbutton.addEventListener('click', () => {
-    displayCourses('WDD');
-    setActiveButton('WDD');
-});
-csebutton.addEventListener('click', () => {
-    displayCourses('CSE');
-    setActiveButton('CSE');
-});
-
-displayCourses('all');
-setActiveButton('all');
