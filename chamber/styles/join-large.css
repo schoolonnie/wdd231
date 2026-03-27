@@ -1,0 +1,35 @@
+@media only screen and (min-width: 40rem) {
+    #grid-section {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    #membership-info {
+        justify-content: space-evenly;
+    }
+
+    .membership-details-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 200px;
+        justify-content: space-evenly;
+    }
+
+    .membership-details-card h3 {
+        padding: 2rem 0.5rem;
+    }
+
+    .membership-details-card p {
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 70rem) {
+    #membership-info {
+        min-width: 300px;
+    }
+}

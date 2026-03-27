@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Lonnie Smith">
-        <meta name="description" content="Jamestown Chamber of Commerce - Directory - List of all members in the commerce">
-        <title>Directory</title>
+        <meta name="description" content="Jamestown Chamber of Commerce - Join Us - List of all members in the commerce">
+        <title>Join Us</title>
         <link rel="icon" href="favicon.ico">
 
         <!-- Meta Tags -->
-        <meta property="og:title" content="Directory - JamestownCC">
-        <meta property="og:description" content="Jamestown Chamber of Commerce - Directory - List of all members in the commerce">
-        <meta property="og:url" content="https://schoolonnie.github.io/wdd231/chamber/directory.html">
+        <meta property="og:title" content="Join Us - JamestownCC">
+        <meta property="og:description" content="Jamestown Chamber of Commerce - Join Us Now! - Thank you page for after submitting the join form">
+        <meta property="og:url" content="https://schoolonnie.github.io/wdd231/chamber/join.html">
         <meta property="og:image" content="https://schoolonnie.github.io/wdd231/chamber/images/hero.webp">
 
         <!-- Fonts -->
@@ -23,35 +23,37 @@
         <link rel="stylesheet" href="../styles/normalize.css">
         <link rel="stylesheet" href="styles/variables.css">
         <link rel="stylesheet" href="styles/layout.css">
-        <link rel="stylesheet" href="styles/directory.css">
-        <link rel="stylesheet" href="styles/directory-large.css">
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="styles/join-large.css">
 
         <!-- Scripts -->
         <script defer src="../scripts/navigation.js"></script>
         <script defer src="../scripts/getdates.js"></script>
-        <script type="module" src="scripts/directory.js"></script>
+        <script type="module" src="scripts/join.js"></script>
     </head>
     <body>
         <header>
             <img src="images/logo.webp" alt="Home Icon" width="40" height="40">
-            <h1>Jamestown Chamber of Commerce - Directory</h1>
+            <h1>Jamestown Chamber of Commerce - Join Us!</h1>
             <button aria-label="menu toggle button" id="ham-btn" class="hamburger"></button>
             <nav id="nav-bar" class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="current" href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a class="current" href="join.html">Join</a></li>
                     <li><a href="discover.html" >Discover</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="title-section">
-                <h2>Directory</h2>
-                <button aria-label="grid or list view toggle" id="list-toggle"></button>
+                <h2>Thank You for Joining!</h2>
             </section>
-            <section id="member-cards"></section>
-            <section id="members-list"></section>
+            <section id="thank-you-section">
+                <p>Thank you for joining the Jamestown Chamber of Commerce! We are excited to have you as a member and look forward to connecting you with local businesses and resources. We will be in touch with you soon with more information about your membership and how to get involved.</p>
+                <p>Your info is displayed below:</p>
+                <section id="display-info"></section>
+            </section>
         </main>
         <footer>
             <h3>Jamestown Chamber of Commerce</h3>

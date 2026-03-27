@@ -135,6 +135,30 @@ footer li {
 }
 
 @media only screen and (min-width: 40rem) {
+    footer {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-template-areas: 
+        "title title title"
+        "contact social legal";
+    }
+
+    footer h3 {
+        grid-area: title;
+        text-align: center;
+    }
+
+    #footer-section-1 {
+        grid-area: contact;
+        text-align: center;
+    }
+
+    #footer-section-2 {
+        grid-area: legal;
+        text-align: center;
+    }
+
     .navigation {
         display: block;
     }
