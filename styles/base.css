@@ -19,6 +19,7 @@
 header {
     display: grid;
     grid-template-columns: 40px auto 50px;
+    grid-template-rows: auto auto;
     padding: 5px 5px 5px 10px;
     align-items: end;
     border-bottom: solid 1px var(--secondary-color);
@@ -59,6 +60,7 @@ h1 {
 /* Navigation */
 .navigation {
     display: none;
+    grid-column: 1 / -1;
 }
 
 .navigation.open {
