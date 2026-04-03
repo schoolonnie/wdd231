@@ -1,0 +1,48 @@
+@media only screen and (min-width: 641px) {
+    .event-card {
+        display: grid;
+        grid-template-areas: 
+            "content1 content1"
+            "image content2"
+            "image content3"
+            "button button";
+    }
+
+    .event-card img {
+        grid-area: image;
+    }
+
+    .event-card h2 {
+        grid-area: content1;
+    }
+
+    .event-card p {
+        grid-area: content2;
+        text-align: left;
+    }
+
+    .event-card address {
+        grid-area: content3;
+        text-align: left;
+    }
+
+    .event-card button {
+        grid-area: button;
+    }
+
+    .event-card img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        border: 1px solid var(--secondary-color);
+    }
+
+}
+
+@media only screen and (min-width: 70rem) {
+    
+    #events-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}

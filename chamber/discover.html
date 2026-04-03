@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Lonnie Smith">
-        <meta name="description" content="Jamestown Chamber of Commerce - Directory - List of all members in the commerce">
-        <title>Directory - Jamestown Chamber of Commerce</title>
+        <meta name="description" content="Jamestown Chamber of Commerce - Discover - Information about the chamber and its members">
+        <title>Discover - Jamestown Chamber of Commerce</title>
         <link rel="icon" href="favicon.ico">
 
         <!-- Meta Tags -->
-        <meta property="og:title" content="Directory - JamestownCC">
-        <meta property="og:description" content="Jamestown Chamber of Commerce - Directory - List of all members in the commerce">
-        <meta property="og:url" content="https://schoolonnie.github.io/wdd231/chamber/directory.html">
+        <meta property="og:title" content="Discover - JamestownCC">
+        <meta property="og:description" content="Jamestown Chamber of Commerce - Discover - Information about the chamber and its members">
+        <meta property="og:url" content="https://schoolonnie.github.io/wdd231/chamber/discover.html">
         <meta property="og:image" content="https://schoolonnie.github.io/wdd231/chamber/images/hero.webp">
 
         <!-- Fonts -->
@@ -23,35 +23,35 @@
         <link rel="stylesheet" href="../styles/normalize.css">
         <link rel="stylesheet" href="styles/variables.css">
         <link rel="stylesheet" href="styles/layout.css">
-        <link rel="stylesheet" href="styles/directory.css">
-        <link rel="stylesheet" href="styles/directory-large.css">
+        <link rel="stylesheet" href="styles/discover.css">
+        <link rel="stylesheet" href="styles/discover-large.css">
 
         <!-- Scripts -->
         <script defer src="../scripts/navigation.js"></script>
         <script defer src="../scripts/getdates.js"></script>
-        <script type="module" src="scripts/directory.js"></script>
+        <script type="module" src="scripts/events.mjs"></script>
+        <script type="module" src="data/discover.mjs"></script>
     </head>
     <body>
         <header>
             <img src="images/logo.webp" alt="Home Icon" width="40" height="40">
-            <h1>Jamestown Chamber of Commerce - Directory</h1>
+            <h1>Jamestown Chamber of Commerce - Discover</h1>
             <button aria-label="menu toggle button" id="ham-btn" class="hamburger"></button>
             <nav id="nav-bar" class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="current" href="directory.html">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html" >Discover</a></li>
+                    <li><a class="current" href="discover.html">Discover</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="title-section">
-                <h2>Directory</h2>
-                <button aria-label="grid or list view toggle" id="list-toggle"></button>
+                <h2>Discover</h2>
+                <div id="last-visit"></div>
             </section>
-            <section id="member-cards"></section>
-            <section id="members-list"></section>
+            <section id="events-section"></section>
         </main>
         <footer>
             <h3>Jamestown Chamber of Commerce</h3>
@@ -72,6 +72,5 @@
                 <p id="lastModified">Last Modified: 00/00/0000</p>
             </section>
         </footer>
-        
     </body>
 </html>
