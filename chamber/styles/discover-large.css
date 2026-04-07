@@ -1,4 +1,4 @@
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 40rem) {
     .event-card {
         display: grid;
         grid-template-areas: 

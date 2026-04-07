@@ -7,6 +7,10 @@ const lastVisitElement = document.getElementById("last-visit");
 const lastVisit = localStorage.getItem("lastVisit");
 const daysSince = lastVisit ? Math.floor((Date.now() - new Date(lastVisit).getTime()) / (1000 * 60 * 60 * 24)) : null;
 
+// Store current visit time
+localStorage.setItem("lastVisit", new Date().toISOString());
+
+// Update last visit message
 if (daysSince < 1) {
     lastVisitElement.textContent = "Back so soon? Awesome!";
 } else if (!lastVisit) {
