@@ -1,0 +1,80 @@
+/* Hero Section */
+#hero-section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#hero-section > img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+#hero-text {
+    position: absolute;
+    top: 15%;
+    left: 1rem;
+    max-width: 40%;
+    padding: 0 1rem;
+}
+
+/* Main */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 0;
+    background-color: var(--secondary-color);
+    padding-bottom: 1rem;
+}
+
+.box {
+    background-color: var(--background-color);
+    box-shadow: var(--primary-text-color) 0px 1px 3px, var(--primary-text-color) 0px 1px 2px;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 1rem;
+}
+
+.text-box {
+    background-color: var(--secondary-background-color);
+    box-shadow: var(--primary-text-color) 0px 1px 3px, var(--primary-text-color) 0px 1px 2px;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: var(--primary-text-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+#about-section {
+    margin: 1rem;
+}
+
+/* Image gallery */
+#image-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery img {
+    border: 3px solid var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: var(--primary-text-color) 0px 1px 3px, var(--primary-text-color) 0px 1px 2px;
+    margin-bottom: 1rem;
+}
