@@ -1,0 +1,12 @@
+/* Highlights */
+#highlight-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* Layout */
+#grid-section {
+    display: flex;
+    flex-direction: column;
+}

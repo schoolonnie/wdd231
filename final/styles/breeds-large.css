@@ -1,0 +1,44 @@
+@media only screen and (min-width: 40rem) {
+    #grid-section {
+        display: grid;
+        grid-template-areas: 
+        "highlights highlights"
+        "info links";
+    }
+    #highlight-section {
+        grid-area: highlights;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    #info-section {
+        grid-area: info;
+    }
+    #links-section {
+        grid-area: links;
+    }
+
+    #highlight-section img {
+        width: 500px;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 47rem) {
+    #highlight-section {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #info-section, #highlight-text, #links-section {
+        padding: 2px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
