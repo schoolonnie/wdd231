@@ -47,6 +47,26 @@
     margin-bottom: 1rem;
 }
 
+#gallery-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.gallery-link {
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+}
+
+.gallery-link:hover {
+    background-color: var(--primary-color);
+}
+
 #gallery-controls {
     display: none;
 }

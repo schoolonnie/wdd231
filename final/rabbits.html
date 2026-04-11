@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lonnie Smith">
+        <meta name="description" content="Rabbit Gallery - Explore different rabbit breeds and profiles">
+        <title>Rabbit Gallery - Big Mini's Quizatron</title>
+        <link rel="icon" href="favicon.ico">
+
+        <!-- Meta Tags -->
+        <meta property="og:title" content="Rabbit Gallery - Big Mini's Quizatron">
+        <meta property="og:description" content="Explore profiles of 15 different rabbits with detailed information">
+        <meta property="og:url" content="schoolonnie.github.io/wdd231/final/rabbits.html">
+        <meta property="og:image" content="schoolonnie.github.io/wdd231/final/images/Mini-main.webp">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="styles/variables.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/gallery.css">
+
+        <!-- Scripts -->
+        <script defer src="../scripts/navigation.js"></script>
+        <script defer src="../scripts/getdates.js"></script>
+        <script type="module" src="scripts/gallery.mjs"></script>
+    </head>
+    <body>
+        <header>
+            <section id="header-top">
+                <h1>Rabbit Gallery</h1>
+                <button aria-label="menu toggle button" id="ham-btn" class="hamburger"></button>
+            </section>
+            <section id="header-bottom">    
+                <nav id="nav-bar" class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flemish.html">Flemish Giant</a></li>
+                        <li><a href="continental.html">Continental Giant</a></li>
+                        <li><a href="rex.html">Rex</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a class="current" href="rabbits.html">Rabbits</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section id="gallery-section" class="box">
+                <h2>Meet Our Rabbits</h2>
+                <div id="rabbit-gallery" class="gallery-grid"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+            <p id="lastModified">Last Modified: 00/00/0000 00:00:00</p>
+            <a href="attributions.html">Image Attributions</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1bbZgn3Wa6epY33U3wxi70ow8q52BfSIF/view?usp=sharing">JS Video</a>
+        </footer>
+
+        <!-- Modal Dialog -->
+        <dialog id="rabbit-modal">
+            <div class="modal-content">
+                <button id="close-modal" aria-label="Close modal">&times;</button>
+                <img id="modal-image" src="" alt="">
+                <h3 id="modal-name"></h3>
+                <div class="modal-details">
+                    <p><strong>Breed:</strong> <span id="modal-breed"></span></p>
+                    <p><strong>Age:</strong> <span id="modal-age"></span></p>
+                    <p><strong>Weight:</strong> <span id="modal-weight"></span></p>
+                    <p><strong>Favorite Food:</strong> <span id="modal-food"></span></p>
+                    <p><strong>Personality:</strong> <span id="modal-personality"></span></p>
+                </div>
+                <button id="favorite-btn">Add to Favorites</button>
+            </div>
+        </dialog>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lonnie Smith">
+        <meta name="description" content="Quiz on rabbit information found on this site - Quiz page for Big Mini's Quizatron">
+        <title>Big Mini's Quizatron - Quiz</title>
+        <link rel="icon" href="favicon.ico">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="styles/variables.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/quiz.css">
+        <link rel="stylesheet" href="styles/quiz-large.css">
+
+        <!-- Scripts -->
+        <script defer src="../scripts/navigation.js"></script>
+        <script defer src="../scripts/getdates.js"></script>
+        <script defer src="scripts/quiz.js"></script>
+    </head>
+    <body>
+        <header>
+            <section id="header-top">
+                <h1>Big Mini's Quizatron!</h1>
+                <button aria-label="menu toggle button" id="ham-btn" class="hamburger"></button>
+            </section>
+            <section id="header-bottom">    
+                <nav id="nav-bar" class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flemish.html">Flemish Giant</a></li>
+                        <li><a href="continental.html">Continental Giant</a></li>
+                        <li><a href="rex.html">Rex</a></li>
+                        <li><a class="current" href="quiz.html">Quiz</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section id="results-section" class="box">
+                <h2>Your Quiz Results</h2>
+                <p id="score"></p>
+                <p id="feedback"></p>
+                <div id="answer-details"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+            <p id="lastModified">Last Modified: 00/00/0000 00:00:00</p>
+            <a href="attributions.html">Image Attributions</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1bbZgn3Wa6epY33U3wxi70ow8q52BfSIF/view?usp=sharing">JS Video</a>
+        </footer>
+    </body>
+</html>

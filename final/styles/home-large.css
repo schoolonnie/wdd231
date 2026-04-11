@@ -68,6 +68,26 @@
         font-size: 1rem;
         cursor: pointer;
     }
+
+    #gallery-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .gallery-link {
+        background-color: var(--tertiary-color);
+        color: var(--primary-text-color);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .gallery-link:hover {
+        background-color: var(--primary-color);
+    }
 }
 
 @media only screen and (min-width: 50rem) {

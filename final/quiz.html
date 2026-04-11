@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lonnie Smith">
+        <meta name="description" content="Quiz on rabbit information found on this site - Quiz page for Big Mini's Quizatron">
+        <title>Big Mini's Quizatron - Quiz</title>
+        <link rel="icon" href="favicon.ico">
+
+        <!-- Meta Tags -->
+        <meta property="og:title" content="Big Mini's Quizatron - Quiz">
+        <meta property="og:description" content="Quiz on rabbit information found on this site - Quiz page for Big Mini's Quizatron">
+        <meta property="og:url" content="schoolonnie.github.io/wdd231/final/quiz.html">
+        <meta property="og:image" content="schoolonnie.github.io/wdd231/final/images/Mini-main.webp">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="styles/variables.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/quiz.css">
+        <link rel="stylesheet" href="styles/quiz-large.css">
+
+        <!-- Scripts -->
+        <script defer src="../scripts/navigation.js"></script>
+        <script defer src="../scripts/getdates.js"></script>
+    </head>
+    <body>
+        <header>
+            <section id="header-top">
+                <h1>Big Mini's Quizatron!</h1>
+                <button aria-label="menu toggle button" id="ham-btn" class="hamburger"></button>
+            </section>
+            <section id="header-bottom">    
+                <nav id="nav-bar" class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flemish.html">Flemish Giant</a></li>
+                        <li><a href="continental.html">Continental Giant</a></li>
+                        <li><a href="rex.html">Rex</a></li>
+                        <li><a class="current" href="quiz.html">Quiz</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <form id="quiz-form" action="results.html">
+                <h2>Test your knowledge on rabbits!</h2>
+                <section class="question box">
+                    <h3>1. What is the name of the rabbit this site is about?</h3>
+                    <label><input type="radio" name="q1" value="a"> Fluffy</label>
+                    <label><input type="radio" name="q1" value="b"> Mini</label>
+                    <label><input type="radio" name="q1" value="c"> Thumper</label>
+                </section>
+                <section class="question box">
+                    <h3>2. What are Rex rabbits known for?</h3>
+                    <label><input type="radio" name="q2" value="a"> Very large size</label>
+                    <label><input type="radio" name="q2" value="b"> Gentle nature</label>
+                    <label><input type="radio" name="q2" value="c"> Distinctive plush fur</label>
+                </section>
+                <section class="question box">
+                    <h3>3. What is one difference in Continental Giants compared to Flemish Giants?</h3>
+                    <label><input type="radio" name="q3" value="a"> Size of head</label>
+                    <label><input type="radio" name="q3" value="b"> Temperament</label>
+                    <label><input type="radio" name="q3" value="c"> Fur texture</label>
+                </section>   
+                <section class="question box">
+                    <h3>4. What is Mini's birth date?</h3>
+                    <label><input type="radio" name="q4" value="a"> 10/31/2025</label>
+                    <label><input type="radio" name="q4" value="b"> 12/25/2025</label>
+                    <label><input type="radio" name="q4" value="c"> 1/1/2026</label>
+                </section>
+                <section class="question box">
+                    <h3>5. Where did Flemish Giants originate?</h3>
+                    <label><input type="radio" name="q5" value="a"> United Kingdom</label>
+                    <label><input type="radio" name="q5" value="b"> Patagonia</label>
+                    <label><input type="radio" name="q5" value="c"> Flanders</label>
+                </section>
+                <section class="question box">
+                    <h3>6. Which breed is recognized by the BRC but not the ARBA?</h3>
+                    <label><input type="radio" name="q6" value="a"> Flemish Giant</label>
+                    <label><input type="radio" name="q6" value="b"> Continental Giant</label>
+                    <label><input type="radio" name="q6" value="c"> Rex</label>
+                </section>
+                <section class="question box">
+                    <h3>7. Which breed was first shown publicly at the Paris International Rabbit Show in 1924?</h3>
+                    <label><input type="radio" name="q7" value="a"> Flemish Giant</label>
+                    <label><input type="radio" name="q7" value="b"> Continental Giant</label>
+                    <label><input type="radio" name="q7" value="c"> Rex</label>
+                </section>
+                <button type="submit" class="text-box">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+            <p id="lastModified">Last Modified: 00/00/0000 00:00:00</p>
+            <a href="attributions.html">Image Attributions</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1bbZgn3Wa6epY33U3wxi70ow8q52BfSIF/view?usp=sharing">JS Video</a>
+        </footer>
+    </body>
+</html>

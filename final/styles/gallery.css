@@ -1,0 +1,118 @@
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.rabbit-card {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: transparent;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.rabbit-card.favorite {
+    border: 4px solid var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+.rabbit-card:hover {
+    transform: scale(1.05);
+}
+
+.rabbit-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.rabbit-card h3 {
+    margin: 0.5rem 0;
+    color: var(--primary-text-color);
+}
+
+.rabbit-card p {
+    margin: 0.25rem 0;
+    color: var(--secondary-text-color);
+}
+
+/* Modal Styles */
+#rabbit-modal {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.modal-content {
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-text-color);
+}
+
+#modal-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.modal-details p {
+    margin: 0.5rem 0;
+    text-align: left;
+    color: var(--secondary-text-color);
+}
+
+#modal-name {
+    color: var(--primary-text-color);
+    margin: 0.5rem 0;
+}
+
+#favorite-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--tertiary-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#favorite-btn:hover {
+    background-color: var(--quaternary-color);
+}
+
+main {
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 350px) {
+    #rabbit-gallery img {
+        width: 100px;
+        height: auto;
+    }
+}

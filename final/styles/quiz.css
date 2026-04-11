@@ -1,0 +1,56 @@
+/* Form */
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#quiz-form button {
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Results Section */
+#results-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.answer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.answer-list li {
+    border: 1px solid var(--tertiary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.answer-list li.correct-answer {
+    border-color: var(--accent-color);
+}
+
+.answer-list li.incorrect-answer {
+    border-color: var(--warning-color, #d9534f);
+}
+
+.answer-list .question-text {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.answer-list p {
+    margin: 0.25rem 0;
+}

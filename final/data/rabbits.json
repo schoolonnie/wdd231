@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Moona",
+    "breed": "Continental Giant",
+    "age": 2,
+    "weight": "12 lbs",
+    "favoriteFood": "applewood",
+    "personality": "curious and playful",
+    "image": "images/rabbit-1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Bunbun",
+    "breed": "Netherland Dwarf",
+    "age": 1,
+    "weight": "3.5 lbs",
+    "favoriteFood": "dandelion greens",
+    "personality": "fast and feisty",
+    "image": "images/rabbit-2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Thumper",
+    "breed": "Flemish Giant",
+    "age": 4,
+    "weight": "18 lbs",
+    "favoriteFood": "carrot tops",
+    "personality": "gentle giant",
+    "image": "images/rabbit-3.webp"
+  },
+  {
+    "id": 4,
+    "name": "Clover",
+    "breed": "English Lop",
+    "age": 3,
+    "weight": "10 lbs",
+    "favoriteFood": "fresh basil",
+    "personality": "friendly and floppy-eared",
+    "image": "images/rabbit-4.webp"
+  },
+  {
+    "id": 5,
+    "name": "Pebbles",
+    "breed": "Mini Rex",
+    "age": 2,
+    "weight": "4.2 lbs",
+    "favoriteFood": "apple slices",
+    "personality": "soft and social",
+    "image": "images/rabbit-5.webp"
+  },
+  {
+    "id": 6,
+    "name": "Ginger",
+    "breed": "Lionhead",
+    "age": 1,
+    "weight": "4 lbs",
+    "favoriteFood": "strawberries",
+    "personality": "energetic and bold",
+    "image": "images/rabbit-6.webp"
+  },
+  {
+    "id": 7,
+    "name": "Mango",
+    "breed": "Dutch",
+    "age": 3,
+    "weight": "5.5 lbs",
+    "favoriteFood": "banana slices",
+    "personality": "calm and cuddly",
+    "image": "images/rabbit-7.webp"
+  },
+  {
+    "id": 8,
+    "name": "Willow",
+    "breed": "Angora",
+    "age": 5,
+    "weight": "9 lbs",
+    "favoriteFood": "timothy hay",
+    "personality": "fluffy and mellow",
+    "image": "images/rabbit-8.webp"
+  },
+  {
+    "id": 9,
+    "name": "Shadow",
+    "breed": "Chinchilla Rabbit",
+    "age": 2,
+    "weight": "7 lbs",
+    "favoriteFood": "lettuce mix",
+    "personality": "shy but affectionate",
+    "image": "images/rabbit-9.webp"
+  },
+  {
+    "id": 10,
+    "name": "Poppy",
+    "breed": "English Spot",
+    "age": 3,
+    "weight": "6.8 lbs",
+    "favoriteFood": "hibiscus petals",
+    "personality": "bouncy and cheerful",
+    "image": "images/rabbit-10.webp"
+  },
+  {
+    "id": 11,
+    "name": "Hazel",
+    "breed": "Polish Rabbit",
+    "age": 2,
+    "weight": "4.1 lbs",
+    "favoriteFood": "sunflower sprouts",
+    "personality": "alert and bright",
+    "image": "images/rabbit-11.webp"
+  },
+  {
+    "id": 12,
+    "name": "Chestnut",
+    "breed": "Harlequin",
+    "age": 4,
+    "weight": "8 lbs",
+    "favoriteFood": "apple slices",
+    "personality": "curious and bold",
+    "image": "images/rabbit-12.webp"
+  },
+  {
+    "id": 13,
+    "name": "Daisy",
+    "breed": "Californian",
+    "age": 3,
+    "weight": "10 lbs",
+    "favoriteFood": "cilantro",
+    "personality": "friendly and calm",
+    "image": "images/rabbit-13.webp"
+  },
+  {
+    "id": 14,
+    "name": "Maple",
+    "breed": "Mini Lop",
+    "age": 2,
+    "weight": "5.3 lbs",
+    "favoriteFood": "mint leaves",
+    "personality": "snuggly and smart",
+    "image": "images/rabbit-14.webp"
+  },
+  {
+    "id": 15,
+    "name": "Pepper",
+    "breed": "New Zealand White",
+    "age": 5,
+    "weight": "11 lbs",
+    "favoriteFood": "celery sticks",
+    "personality": "reliable and calm",
+    "image": "images/rabbit-15.webp"
+  }
+]
