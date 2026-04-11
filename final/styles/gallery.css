@@ -106,10 +106,6 @@
     background-color: var(--quaternary-color);
 }
 
-main {
-    padding-top: 1rem;
-}
-
 @media only screen and (max-width: 350px) {
     #rabbit-gallery img {
         width: 100px;

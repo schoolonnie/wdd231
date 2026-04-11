@@ -90,7 +90,7 @@ body {
 main {
     margin: 0;
     background-color: var(--secondary-color);
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .box {
